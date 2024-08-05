@@ -2,6 +2,8 @@ import "./App.css";
 import starIcon from "./assets/images/icon-star.svg";
 import FaqAccordion from "./components/FaqAaccordion";
 
+import { FAQS } from "./FAQS";
+
 function App() {
 	return (
 		<main>
@@ -11,15 +13,13 @@ function App() {
 			</section>
 
 			<section className="faqs">
-				<FaqAccordion
-					question="What is Frontend Mentor, and how will it help me"
-					answer="aaa"
-				/>
-
-				<FaqAccordion
-					question="What is Frontend Mentor, and how will it help me"
-					answer="aaa"
-				/>
+				{FAQS.map(({ question, answer }) => (
+					<FaqAccordion
+						question={question}
+						answer={answer}
+						key={question}
+					/>
+				))}
 			</section>
 		</main>
 	);
