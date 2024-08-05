@@ -1,5 +1,5 @@
-import plusIcon from "../assets/images/icon-plus.svg";
-import minusIcon from "../assets/images/icon-minus.svg";
+import plusIcon from "../../public/assets/images/icon-plus.svg";
+import minusIcon from "../../public/assets/images/icon-minus.svg";
 
 import { useState } from "react";
 
