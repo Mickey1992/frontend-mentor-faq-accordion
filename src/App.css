@@ -2,6 +2,13 @@ h2 {
 	display: inline-block;
 	font-weight: 700;
 	font-size: 3rem;
+	margin-left: 0.5em;
+}
+
+main {
+	background-color: var(--white);
+	border-radius: 1em;
+	padding: 2em;
 }
 
 .header {
@@ -11,11 +18,36 @@ h2 {
 	align-items: center;
 }
 
-.faqs {
-	background-color: var(--white);
-	border-radius: 1em;
+.faqs > * + * {
+	border-top: 0.1rem solid var(--light-pink);
 }
 
-.icon {
-	display: inline-block;
+.faqs * {
+	padding-left: 0;
+}
+
+.faq-accordion {
+	padding: 1.5em 0;
+}
+
+.faq-accordion p {
+	margin-right: 2em;
+}
+
+.question {
+	display: flex;
+	font-weight: 600;
+	color: var(--dark-purple);
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 1em;
+}
+
+.question .icon {
+	justify-self: flex-end;
+}
+
+p.answer {
+	font-weight: 400;
+	color: var(--grayish-purple);
 }

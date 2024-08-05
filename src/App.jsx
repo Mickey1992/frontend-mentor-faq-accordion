@@ -4,13 +4,23 @@ import FaqAccordion from "./components/FaqAaccordion";
 
 function App() {
 	return (
-		<main className="faqs">
+		<main>
 			<section className="header">
 				<img className="icon" src={starIcon} alt="a star icon" />
 				<h2>FAQs</h2>
 			</section>
 
-			<FaqAccordion />
+			<section className="faqs">
+				<FaqAccordion
+					question="What is Frontend Mentor, and how will it help me"
+					answer="aaa"
+				/>
+
+				<FaqAccordion
+					question="What is Frontend Mentor, and how will it help me"
+					answer="aaa"
+				/>
+			</section>
 		</main>
 	);
 }
