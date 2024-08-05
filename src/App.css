@@ -9,6 +9,8 @@ main {
 	background-color: var(--white);
 	border-radius: 1em;
 	padding: 2em;
+	max-width: 50em;
+	margin: auto;
 }
 
 .header {
