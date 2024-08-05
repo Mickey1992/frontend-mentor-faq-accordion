@@ -47,6 +47,11 @@ main {
 	justify-self: flex-end;
 }
 
+.question p:hover {
+	color: purple;
+	cursor: pointer;
+}
+
 p.answer {
 	font-weight: 400;
 	color: var(--grayish-purple);
