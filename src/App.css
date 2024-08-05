@@ -1,1 +1,21 @@
+h2 {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 3rem;
+}
 
+.header {
+	display: flex;
+
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.faqs {
+	background-color: var(--white);
+	border-radius: 1em;
+}
+
+.icon {
+	display: inline-block;
+}
